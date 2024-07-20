@@ -1,14 +1,11 @@
 import React, { useState } from 'react'
 import Funcompone from './Funcompone'
 import Funcomtwo from './Funcomtwo'
-import '../App.css'
+import '../App.css' 
 
 const Togglefun = () => {
     const [funcone , setfuncone] = useState(false);
     const [functwo , setfunctwo] = useState(false);
-
-
-
 
 
   return (
@@ -17,10 +14,10 @@ const Togglefun = () => {
         <button onClick={()=>setfunctwo(!functwo)}>Second Functional Component</button>
 
 
-    <center><div className="container">
+    <div className="container">
         {funcone?<Funcompone/>:null}
         {functwo?<Funcomtwo/>:null}
-    </div></center>
+    </div>
     
     </div>
   )
